@@ -1,0 +1,220 @@
+
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+            top: 60px;
+            right: 20px;
+            width: 224px; /* Matches w-56 (14rem = 224px) */
+            background-color: white;
+            border: 1px solid #e5e7eb;
+            border-radius: 6px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            z-index: 50;
+            overflow: hidden;
+            animation: fadeIn 0.2s ease-in;
+        }
+
+        .dropdown-menu.open {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: scale(0.95); }
+            to { opacity: 1; transform: scale(1); }
+        }
+
+        .dropdown-label {
+            padding: 6px 8px;
+            font-size: 14px;
+            font-weight: 600;
+            color: #111827;
+        }
+
+        .dropdown-separator {
+            margin: 4px -4px;
+            height: 1px;
+            background-color: #e5e7eb;
+        }
+
+        .dropdown-item {
+            display: flex;
+            align-items: center;
+            padding: 6px 8px;
+            font-size: 14px;
+            color: #111827;
+            cursor: pointer;
+            transition: background-color 0.2s, color 0.2s;
+        }
+
+        .dropdown-item:hover {
+            background-color: #f3f4f6;
+            color: #1f2937;
+        }
+
+        .dropdown-item svg {
+            width: 16px;
+            height: 16px;
+            margin-right: 8px;
+            stroke: currentColor;
+            stroke-width: 2;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+        }
+
+        .dropdown-item:disabled {
+            opacity: 0.5;
+            pointer-events: none;
+        }
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 5rem 1.5rem 2rem;
+}
+
+.page-title {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 3rem;
+  color: #1a202c;
+}
+
+.form-wrapper {
+  max-width: 896px; 
+  margin: 0 auto;
+}
+
+.form-card {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 0.5rem;
+}
+
+.section-title {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #1a202c;
+  letter-spacing: 0.05em;
+}
+
+.section-title-top {
+  margin-top: 2rem;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .form-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.form-grid-single {
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.05em;
+  color: #1a202c;
+}
+
+.form-input {
+  width: 100%;
+  background-color: #edf2f7;
+  color: #1a202c;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  border: none;
+}
+
+.form-input:focus {
+  outline: 2px solid #e53e3e;
+}
+
+.guest-counter {
+  display: flex;
+  align-items: center;
+}
+
+.counter-btn {
+  background-color: #edf2f7;
+  padding: 0.25rem 0.75rem;
+  border: none;
+  cursor: pointer;
+}
+
+.counter-decrement {
+  border-radius: 0.25rem 0 0 0.25rem;
+}
+
+.counter-increment {
+  border-radius: 0 0.25rem 0.25rem 0;
+}
+
+.counter-input {
+  background-color: #edf2f7;
+  text-align: center;
+  width: 4rem;
+  padding: 0.25rem;
+  border-left: 1px solid #ffffff;
+  border-right: 1px solid #ffffff;
+  border-top: none;
+  border-bottom: none;
+}
+
+.seating-options {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.seating-option {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.seating-radio {
+  accent-color: #e53e3e;
+}
+
+.seating-label {
+  letter-spacing: 0.05em;
+  color: #1a202c;
+}
+
+.form-submit {
+  text-align: center;
+}
+
+.submit-btn {
+  background-color: #e53e3e;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #c53030;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}

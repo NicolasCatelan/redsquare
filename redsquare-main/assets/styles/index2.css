@@ -1,0 +1,479 @@
+
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+            top: 60px;
+            right: 20px;
+            width: 224px; /* Matches w-56 (14rem = 224px) */
+            background-color: white;
+            border: 1px solid #e5e7eb;
+            border-radius: 6px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            z-index: 50;
+            overflow: hidden;
+            animation: fadeIn 0.2s ease-in;
+        }
+
+        .dropdown-menu.open {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: scale(0.95); }
+            to { opacity: 1; transform: scale(1); }
+        }
+
+        .dropdown-label {
+            padding: 6px 8px;
+            font-size: 14px;
+            font-weight: 600;
+            color: #111827;
+        }
+
+        .dropdown-separator {
+            margin: 4px -4px;
+            height: 1px;
+            background-color: #e5e7eb;
+        }
+
+        .dropdown-item {
+            display: flex;
+            align-items: center;
+            padding: 6px 8px;
+            font-size: 14px;
+            color: #111827;
+            cursor: pointer;
+            transition: background-color 0.2s, color 0.2s;
+        }
+
+        .dropdown-item:hover {
+            background-color: #f3f4f6;
+            color: #1f2937;
+        }
+
+        .dropdown-item svg {
+            width: 16px;
+            height: 16px;
+            margin-right: 8px;
+            stroke: currentColor;
+            stroke-width: 2;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+        }
+
+        .dropdown-item:disabled {
+            opacity: 0.5;
+            pointer-events: none;
+        }
+        
+.hero-section {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.content {
+  position: relative;
+  z-index: 10;
+  text-align: center;
+  padding: 0 24px;
+}
+
+.restaurant-title {
+  font-size: 3rem;
+  margin-bottom: 16px;
+  color: white; 
+}
+
+.description {
+  font-size: 1.25rem;
+  margin-bottom: 32px;
+  font-weight: 300;
+  max-width: 672px;
+  margin-left: auto;
+  margin-right: auto;
+  color: white; 
+}
+
+.button-group {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  justify-content: center;
+}
+
+.red-btn {
+  background-color: red; 
+  color: white;
+  padding: 12px 24px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 300;
+  display: inline-block;
+}
+
+.reserve-btn {
+  border: 1px solid white;
+  color: white;
+  padding: 12px 32px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 300;
+  letter-spacing: 0.1em;
+  transition: background-color 0.3s;
+}
+
+.reserve-btn:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+
+@media (min-width: 768px) {
+  .restaurant-title {
+    font-size: 4.5rem;
+  }
+
+  .description {
+    font-size: 1.5rem;
+  }
+
+  .button-group {
+    flex-direction: row;
+  }
+}
+
+.dishes-section {
+  padding: 5rem 1.5rem;
+  background-color: #1a202c; 
+}
+
+.dishes-container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  color: white; 
+  margin-bottom: 2rem;
+}
+
+.dish-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .dish-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.dish-card {
+  background-color: #2d3748; 
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.dish-image {
+  height: 16rem;
+  background-color: #4a5568; 
+}
+
+.image-cover {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.dish-content {
+  padding: 1.5rem;
+}
+
+.dish-name {
+  font-size: 1.25rem;
+  font-weight: 300;
+  color: white; 
+  margin-bottom: 0.5rem;
+}
+
+.dish-description {
+  color: #a0aec0; 
+  margin-bottom: 1rem;
+}
+
+.dish-price {
+  color: #e53e3e;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.dish-button {
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: white; 
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.dish-button:hover {
+  color: #e53e3e; 
+}
+
+.menu-link {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.menu-button {
+  display: inline-block;
+  background-color: #e53e3e; 
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.25rem;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.menu-button:hover {
+  background-color: #c53030; 
+}
+
+.about-section {
+  padding: 5rem 1.5rem;
+  background-color: #1D2025; 
+}
+
+.about-container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .about-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #EEF5E8; 
+  margin-bottom: 1.5rem;
+}
+
+.text-content {
+  font-size: 1.125rem;
+  color: rgb(215, 218, 223); 
+  line-height: 1.6;
+}
+
+.text-content:not(:last-child) {
+  margin-bottom: 1.5rem;
+}
+
+.about-image {
+  height: 24rem;
+  background-color: #edf2f7; 
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.image-cover {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.reservation-section {
+  padding: 5rem 1.5rem;
+  background-image: url('https://images.unsplash.com/photo-1511795409834-ef04bbd61622?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.reservation-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 10;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: white; 
+  margin-bottom: 2rem;
+}
+
+.reservation-text {
+  font-size: 1.25rem;
+  color: white; 
+  max-width: 672px; 
+  margin: 0 auto 2rem;
+}
+
+.reserve-button {
+  display: inline-block;
+  background-color: #e53e3e; 
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.25rem;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.reserve-button:hover {
+  background-color: #c53030; 
+}
+
+.footer-section {
+  background-color: #1a202c; 
+}
+
+.footer-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .footer-content {
+    flex-direction: row;
+  }
+}
+
+.footer-logo {
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 768px) {
+  .footer-logo {
+    margin-bottom: 0;
+  }
+}
+
+.restaurant-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white; 
+  margin-bottom: 1rem;
+}
+
+.footer-description {
+  color: #a0aec0; 
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .footer-links {
+    flex-direction: row;
+    gap: 3rem;
+  }
+}
+
+.footer-column {
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .footer-column {
+    text-align: left;
+  }
+}
+
+.column-title {
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: white; 
+  margin-bottom: 1rem;
+  letter-spacing: 0.05em; 
+}
+
+.link-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.link-list li {
+  margin-bottom: 0.5rem;
+  color: #a0aec0; 
+}
+
+.footer-link {
+  color: #a0aec0; 
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+  color: #e53e3e; 
+}
+
+.address {
+  color: #a0aec0; 
+  font-style: normal;
+  line-height: 1.5;
+}
+
+.footer-bottom {
+  border-top: 1px solid #4a5568; 
+  margin-top: 2rem;
+  padding-top: 2rem;
+  text-align: center;
+  color: #a0aec0; 
+}
+

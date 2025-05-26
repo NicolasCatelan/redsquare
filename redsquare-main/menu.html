@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="./assets/imgs/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="./assets/styles/reset.css">
+	<link rel="stylesheet" href="./assets/styles/global.css">
+	<link rel="stylesheet" href="./assets/styles/navbar.css">
+    <link rel="stylesheet" href="./assets/styles/menu.css">   
+    <title>Red Square</title>
+</head>
+<body>
+    <nav class="navbar">
+		<div class="navbar-container">
+		<a href="./index.html" class="logo-link">
+			<img src="./assets/imgs/favicon.ico" alt="Red Square Logo" class="logo">
+		</a>
+		<button class="mobile-toggle">
+			<svg xmlns="http://www.w3.org/2000/svg" class="menu-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+			<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+			</svg>
+		</button>
+		<div class="desktop-menu">
+			<a href="./menu.html" class="nav-item">Menu</a>
+			<a href="./reserve.html" class="nav-item">Reserva</a>
+			<a href="./contact.html" class="nav-item">Contato</a>
+			<a href="./login.html" class="nav-item account-link">Conta</a>
+		</div>
+		</div>
+	</nav>
+    <div class="container">
+    <h1 class="menu-title">Menu</h1>
+    <div class="flex justify-center mb-8">
+  <div class="flex gap-2 mb-6">
+    <button class="justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary-90 h-9 rounded-md px-3 flex items-center gap-2">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-grid2x2 h-4 w-4">
+        <path d="M12 3v18"></path>
+        <path d="M3 12h18"></path>
+        <rect x="3" y="3" width="18" height="18" rx="2"></rect>
+      </svg>
+      Grade
+    </button>
+    <button class="justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3 flex items-center gap-2">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-list h-4 w-4">
+        <path d="M3 12h.01"></path>
+        <path d="M3 18h.01"></path>
+        <path d="M3 6h.01"></path>
+        <path d="M8 12h13"></path>
+        <path d="M8 18h13"></path>
+        <path d="M8 6h13"></path>
+      </svg>
+      Lista
+    </button>
+  </div>
+</div>
+    <div class="category-nav">
+      <a href="#entradas" class="category-link">Entradas</a>
+      <a href="#principais" class="category-link">Pratos Principais</a>
+      <a href="#sobremesas" class="category-link">Sobremesas</a>
+      <a href="#bebidas" class="category-link">Bebidas</a>
+    </div>
+    <div id="entradas">
+      <section class="menu-category">
+        <h2 class="category-title">Entradas</h2>
+        <div class="menu-grid">
+          <div class="menu-item">
+            <div class="item-image">
+              <img src="https://images.unsplash.com/photo-1581276879432-15e50529f34b?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Carpaccio de Carne" class="image-cover">
+            </div>
+            <div class="item-content">
+              <h3 class="item-name">Carpaccio de Carne</h3>
+              <div class="item-description">Finas fatias de carne crua temperadas com azeite, limão e parmesão</div>
+              <div class="item-footer">
+                <span class="item-price">R$ 42.00</span>
+                <button class="item-button">Pedir</button>
+              </div>
+            </div>
+          </div>
+          <div class="menu-item">
+            <div class="item-image">
+              <img src="https://images.unsplash.com/photo-1506280754576-f6fa8a873550?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Bruschetta de Tomate" class="image-cover">
+            </div>
+            <div class="item-content">
+              <h3 class="item-name">Bruschetta de Tomate</h3>
+              <div class="item-description">Pão italiano grelhado com tomate, manjericão e alho</div>
+              <div class="item-footer">
+                <span class="item-price">R$ 32.00</span>
+                <button class="item-button">Pedir</button>
+              </div>
+            </div>
+          </div>
+          <div class="menu-item">
+            <div class="item-image">
+              <img src="https://images.unsplash.com/photo-1565557623262-b51c2513a641?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Camarões Grelhados" class="image-cover">
+            </div>
+            <div class="item-content">
+              <h3 class="item-name">Camarões Grelhados</h3>
+              <div class="item-description">Camarões marinados em ervas e grelhados com limão</div>
+              <div class="item-footer">
+                <span class="item-price">R$ 58.00</span>
+                <button class="item-button">Pedir</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div id="principais">
+      <section class="menu-category">
+        <h2 class="category-title">Pratos Principais</h2>
+        <div class="menu-grid">
+          <div class="menu-item">
+            <div class="item-image">
+              <img src="https://images.unsplash.com/photo-1544025162-d76694265947?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Filé Mignon ao Molho Madeira" class="image-cover">
+            </div>
+            <div class="item-content">
+              <h3 class="item-name">Filé Mignon ao Molho Madeira</h3>
+              <div class="item-description">Filé mignon grelhado, coberto com molho madeira e cogumelos</div>
+              <div class="item-footer">
+                <span class="item-price">R$ 98.00</span>
+                <button class="item-button">Pedir</button>
+              </div>
+            </div>
+          </div>
+          <div class="menu-item">
+            <div class="item-image">
+              <img src="https://images.unsplash.com/photo-1546964124-0cce460f38ef?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Salmão Grelhado" class="image-cover">
+            </div>
+            <div class="item-content">
+              <h3 class="item-name">Salmão Grelhado</h3>
+              <div class="item-description">Salmão fresco grelhado com molho de ervas e limão</div>
+              <div class="item-footer">
+                <span class="item-price">R$ 89.00</span>
+                <button class="item-button">Pedir</button>
+              </div>
+            </div>
+          </div>
+          <div class="menu-item">
+            <div class="item-image">
+              <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Risoto de Funghi" class="image-cover">
+            </div>
+            <div class="item-content">
+              <h3 class="item-name">Risoto de Funghi</h3>
+              <div class="item-description">Risoto cremoso preparado com mix de cogumelos frescos</div>
+              <div class="item-footer">
+                <span class="item-price">R$ 78.00</span>
+                <button class="item-button">Pedir</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div id="sobremesas">
+      <section class="menu-category">
+        <h2 class="category-title">Sobremesas</h2>
+        <div class="menu-grid">
+          <div class="menu-item">
+            <div class="item-image">
+              <img src="https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Tiramisù" class="image-cover">
+            </div>
+            <div class="item-content">
+              <h3 class="item-name">Tiramisù</h3>
+              <div class="item-description">Clássico italiano com café, mascarpone e cacau</div>
+              <div class="item-footer">
+                <span class="item-price">R$ 36.00</span>
+                <button class="item-button">Pedir</button>
+              </div>
+            </div>
+          </div>
+          <div class="menu-item">
+            <div class="item-image">
+              <img src="https://images.unsplash.com/photo-1586767003402-8ade309b1b9e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Crème Brûlée" class="image-cover">
+            </div>
+            <div class="item-content">
+              <h3 class="item-name">Crème Brûlée</h3>
+              <div class="item-description">Creme de baunilha com casquinha de açúcar caramelizado</div>
+              <div class="item-footer">
+                <span class="item-price">R$ 32.00</span>
+                <button class="item-button">Pedir</button>
+              </div>
+            </div>
+          </div>
+          <div class="menu-item">
+            <div class="item-image">
+              <img src="https://images.unsplash.com/photo-1612203985729-70726954388c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Profiteroles" class="image-cover">
+            </div>
+            <div class="item-content">
+              <h3 class="item-name">Profiteroles</h3>
+              <div class="item-description">Pequenas bombas de massa choux recheadas com creme e cobertas com chocolate</div>
+              <div class="item-footer">
+                <span class="item-price">R$ 38.00</span>
+                <button class="item-button">Pedir</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div id="bebidas">
+      <section class="menu-category">
+        <h2 class="category-title">Bebidas</h2>
+        <div class="menu-grid">
+          <div class="menu-item">
+            <div class="item-image">
+              <img src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Vinho Tinto" class="image-cover">
+            </div>
+            <div class="item-content">
+              <h3 class="item-name">Vinho Tinto</h3>
+              <div class="item-description">Taça de vinho tinto selecionado da casa</div>
+              <div class="item-footer">
+                <span class="item-price">R$ 32.00</span>
+                <button class="item-button">Pedir</button>
+              </div>
+            </div>
+          </div>
+          <div class="menu-item">
+            <div class="item-image">
+              <img src="https://images.unsplash.com/photo-1546171753-97d7676e4602?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Mojito" class="image-cover">
+            </div>
+            <div class="item-content">
+              <h3 class="item-name">Mojito</h3>
+              <div class="item-description">Drink refrescante com rum, hortelã, limão e água com gás</div>
+              <div class="item-footer">
+                <span class="item-price">R$ 28.00</span>
+                <button class="item-button">Pedir</button>
+              </div>
+            </div>
+          </div>
+          <div class="menu-item">
+            <div class="item-image">
+              <img src="https://images.unsplash.com/photo-1564419188205-57c54f65b7fb?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Água Mineral" class="image-cover">
+            </div>
+            <div class="item-content">
+              <h3 class="item-name">Água Mineral</h3>
+              <div class="item-description">Garrafa de água mineral com ou sem gás</div>
+              <div class="item-footer">
+                <span class="item-price">R$ 8.00</span>
+                <button class="item-button">Pedir</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="./assets/imgs/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="./assets/styles/reset.css">
+	<link rel="stylesheet" href="./assets/styles/global.css">
+	<link rel="stylesheet" href="./assets/styles/navbar.css">
+    <link rel="stylesheet" href="./assets/styles/reserve.css">   
+    <title>Red Square</title>
+</head>
+<body>
+    <nav class="navbar">
+		<div class="navbar-container">
+		<a href="./index.html" class="logo-link">
+			<img src="./assets/imgs/favicon.ico" alt="Red Square Logo" class="logo">
+		</a>
+		<button class="mobile-toggle">
+			<svg xmlns="http://www.w3.org/2000/svg" class="menu-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+			<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+			</svg>
+		</button>
+		<div class="desktop-menu">
+			<a href="./menu.html" class="nav-item">Menu</a>
+			<a href="./reserve.html" class="nav-item">Reserva</a>
+			<a href="./contact.html" class="nav-item">Contato</a>
+			<a href="./login.html" class="nav-item account-link">Conta</a>
+		</div>
+		</div>
+	</nav>
+    <div class="container">
+    <h1 class="page-title">Reservas</h1>
+    <div class="form-wrapper">
+      <div class="form-card">
+        <form>
+          <h3 class="section-title">Datas</h3>
+          <div class="form-grid">
+            <div>
+              <label for="date" class="form-label">Data</label>
+              <input type="date" id="date" class="form-input" required>
+            </div>
+            <div>
+              <label for="time" class="form-label">Horário</label>
+              <select id="time" class="form-input" required>
+                <option value="">Selecione um horário</option>
+                <option value="18:00">18:00</option>
+                <option value="18:30">18:30</option>
+                <option value="19:00">19:00</option>
+                <option value="19:30">19:30</option>
+                <option value="20:00">20:00</option>
+                <option value="20:30">20:30</option>
+                <option value="21:00">21:00</option>
+                <option value="21:30">21:30</option>
+                <option value="22:00">22:00</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="guests" class="form-label">Pessoas</label>
+            <div class="guest-counter">
+              <button type="button" class="counter-btn counter-decrement">-</button>
+              <input type="number" id="guests" min="1" class="counter-input" value="2" required>
+              <button type="button" class="counter-btn counter-increment">+</button>
+            </div>
+          </div>
+          <h3 class="section-title section-title-top">Mesas</h3>
+          <div class="seating-options">
+            <div class="seating-option">
+              <input type="radio" id="standard" name="seating" value="standard" class="seating-radio" checked>
+              <label for="standard" class="seating-label">Mesa Padrão</label>
+            </div>
+            <div class="seating-option">
+              <input type="radio" id="window" name="seating" value="window" class="seating-radio">
+              <label for="window" class="seating-label">Mesa na Janela</label>
+            </div>
+            <div class="seating-option">
+              <input type="radio" id="private" name="seating" value="private" class="seating-radio">
+              <label for="private" class="seating-label">Área Privativa</label>
+            </div>
+          </div>
+          <h3 class="section-title section-title-top">Seus Dados</h3>
+          <div class="form-grid form-grid-single">
+            <div>
+              <label for="name" class="form-label">Nome</label>
+              <input type="text" id="name" class="form-input" required>
+            </div>
+            <div>
+              <label for="email" class="form-label">Email</label>
+              <input type="email" id="email" class="form-input" required>
+            </div>
+            <div>
+              <label for="phone" class="form-label">Telefone</label>
+              <input type="tel" id="phone" class="form-input" required>
+            </div>
+          </div>
+          <div class="form-submit">
+            <button type="submit" class="submit-btn">Reservar</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

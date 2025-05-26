@@ -1,0 +1,173 @@
+
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+            top: 60px;
+            right: 20px;
+            width: 224px; /* Matches w-56 (14rem = 224px) */
+            background-color: white;
+            border: 1px solid #e5e7eb;
+            border-radius: 6px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            z-index: 50;
+            overflow: hidden;
+            animation: fadeIn 0.2s ease-in;
+        }
+
+        .dropdown-menu.open {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: scale(0.95); }
+            to { opacity: 1; transform: scale(1); }
+        }
+
+        .dropdown-label {
+            padding: 6px 8px;
+            font-size: 14px;
+            font-weight: 600;
+            color: #111827;
+        }
+
+        .dropdown-separator {
+            margin: 4px -4px;
+            height: 1px;
+            background-color: #e5e7eb;
+        }
+
+        .dropdown-item {
+            display: flex;
+            align-items: center;
+            padding: 6px 8px;
+            font-size: 14px;
+            color: #111827;
+            cursor: pointer;
+            transition: background-color 0.2s, color 0.2s;
+        }
+
+        .dropdown-item:hover {
+            background-color: #f3f4f6;
+            color: #1f2937;
+        }
+
+        .dropdown-item svg {
+            width: 16px;
+            height: 16px;
+            margin-right: 8px;
+            stroke: currentColor;
+            stroke-width: 2;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+        }
+
+        .dropdown-item:disabled {
+            opacity: 0.5;
+            pointer-events: none;
+        }
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 5rem 1.5rem 2rem;
+}
+
+.page-title {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 3rem;
+  color: #1a202c;
+}
+
+.contact-wrapper {
+  max-width: 1024px; 
+  margin: 0 auto;
+}
+
+.contact-card {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 0.5rem;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .contact-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.section-title {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #1a202c;
+}
+
+@media (min-width: 768px) {
+  .section-title {
+    text-align: left;
+  }
+}
+
+.section-title-top {
+  margin-top: 2rem;
+}
+
+.contact-text {
+  font-size: 1.25rem;
+  text-align: center;
+  color: #4a5568;
+}
+
+@media (min-width: 768px) {
+  .contact-text {
+    text-align: left;
+  }
+}
+
+.address-details {
+  font-size: 1.125rem;
+  text-align: center;
+  color: #4a5568;
+}
+
+.address-details p {
+  margin-bottom: 0.25rem;
+}
+
+@media (min-width: 768px) {
+  .address-details {
+    text-align: left;
+  }
+}
+
+.hours-details {
+  text-align: center;
+  color: #4a5568;
+}
+
+.hours-details p {
+  margin-bottom: 0.5rem;
+}
+
+@media (min-width: 768px) {
+  .hours-details {
+    text-align: left;
+  }
+}
+
+.hours-time {
+  font-size: 1.25rem;
+}
+
+.hours-day {
+  margin-top: 0.5rem;
+}
